@@ -1,7 +1,12 @@
 <?php 
     return [
-        [ 'text' => 'Home' , 'route' => 'comics' ],
-        [ 'text' => 'Comics' , 'route' => 'comics' ],
-        [ 'text' => 'Characters' , 'route' => 'characters']
-    ]
-?>
+        "navlink" => [
+            [ 'text' => 'Home' , 'url' => 'comics' ],
+            [ 'text' => 'Comics' , 'url' => 'comics' ],
+            [ 'text' => 'Characters' , 'url' => 'characters']
+        ],
+        "imgnav" => "" ,
+        
+    ];
+    
+    // menu links array di array

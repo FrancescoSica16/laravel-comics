@@ -13,7 +13,8 @@
 
     </head>
     <body>
-        @include("partial.header", ["links" => config('headerNavData')])
+        <!-- inserisco i dati presi da config -> headerNavData  -->
+        @include("partial.header", ["header_links" => config('headerNavData.navlink')])
 
         <main>
             @yield('contenuto')
