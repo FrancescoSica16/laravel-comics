@@ -6,6 +6,6 @@
 
 @section('contenuto')
     <div class="container">
-        <h1>Home page test mio</h1>
+        <h1>Characters test mio</h1>
     </div>
 @endsection

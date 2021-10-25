@@ -8,6 +8,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <!-- Aggiungo style del css compilato. lo faccio attraverso ASSET -->
+        <link rel="stylesheet" href="{{ asset('css/app.css' )}}">
 
     </head>
     <body>
