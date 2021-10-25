@@ -1,4 +1,6 @@
 <header>
+    
+
     <ul>
         <li>
             <a href="{{ route('comics')}}">Home</a>
