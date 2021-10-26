@@ -1,0 +1,27 @@
+header {
+  color: blue;
+  background-color: chocolate;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+header ul li {
+  padding: 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+}
+
+header.active {
+  background-color: brown;
+}
+
+header:hover {
+  background-color: chartreuse;
+}
+
