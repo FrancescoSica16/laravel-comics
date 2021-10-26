@@ -9,10 +9,11 @@
          @foreach ($comicitem as $comic)
 
             <div class="comic-item">
-
-                <img src="{{$comic["thumb"]}}" alt="">
-                <h3>{{$comic["title"]}}</h3>
-
+                <a href='{{route("comics.show" , ["id" => $loop->index])}}'>
+                {{-- <a href="{{url("/comics/$loop->index")}}">   --}}
+                    <img src="{{$comic["thumb"]}}" alt="">
+                    <h3>{{$comic["title"]}}</h3>
+                </a>
             </div>
         @endforeach 
     </div>
