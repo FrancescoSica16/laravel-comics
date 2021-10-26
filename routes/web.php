@@ -19,10 +19,12 @@ Route::get('/', function () {
 })-> name('comics');
 
 //per reindirizzare all pagina prodotti
-Route::get('/product', function () {
-    $prodotti = config("comicsData");
-    return view('productComic', ["prodotti_comics" => $prodotti] );
- })-> name('product');
+
+ Route::get('/comics/{id}', function ($id) {
+     $comics = config("comicsData");
+     $comic = $comics[$id];
+    return view('comic', ["comic" => $comic]);
+ })-> name('comics.show');
 
 
 Route::get('/characters', function () {
