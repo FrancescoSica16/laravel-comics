@@ -19,7 +19,9 @@ Route::get('/', function () {
 })-> name('comics');
 
 
-
+Route::get('/product', function () {
+    return view('productComic');
+ })-> name('product');
 
 
 Route::get('/characters', function () {
