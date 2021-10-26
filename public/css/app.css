@@ -1,3 +1,38 @@
+.comic-item {
+  flex-basis: calc(16.6666666667% - 24px);
+  margin: 6px;
+}
+
+.comic-item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-bottom: 10px;
+}
+
+.comic-item h4 {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+#main-wrapper {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+#main-wrapper h2 {
+  padding: 50px 0px;
+  color: white;
+}
+
 header {
   color: blue;
   background-color: chocolate;
