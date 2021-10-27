@@ -23,9 +23,14 @@ Route::get('/', function () {
  Route::get('/comics/{id}', function ($id) {
      $comics = config("comicsData");
 
+        $previus = $id - 1;
+        $next = $id + 1 ;
+
      if(is_numeric($id) && ($id < count($comics)) && $id >= 0 ){
+
         $comic = $comics[$id];
-        return view('comic', ["comic" => $comic]);
+        return view('comic', ["comic" => $comic , "next" => $next, "previus" => $previus]);
+
      } else {
         abort("404");
      }

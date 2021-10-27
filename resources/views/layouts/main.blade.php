@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <!-- Aggiungo style del css compilato. lo faccio attraverso ASSET -->
         <link rel="stylesheet" href="{{ asset('css/app.css')}}">
-
+        @yield("cdn-import")
     </head>
     <body>
         <!-- inserisco i dati presi da config -> headerNavData  -->
@@ -22,5 +22,8 @@
 
 
         @include("partial.footer")
+
+        @yield("script-adder")
+        
     </body>
 </html>

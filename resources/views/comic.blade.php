@@ -3,6 +3,20 @@
 @section("title" , "fetuccine") 
 
 @section('contenuto')
+
+    <nav class="product-prev">
+        <a href="">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+
+    </nav>
+
+    <nav class="product-next">
+        <a href="">           
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </nav>
+
     <div class="container">
         <img src="{{$comic["thumb"]}}" alt="">
         <h2>{{$comic["title"]}}</h2>
@@ -47,4 +61,10 @@
         {{-- @dump($prodotto) --}}
     </div>
 
+    
+
+@endsection
+
+@section("cdn-import")
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 @endsection

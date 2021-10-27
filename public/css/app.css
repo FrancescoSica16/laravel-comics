@@ -60,3 +60,20 @@ header:hover {
   background-color: chartreuse;
 }
 
+nav {
+  font-size: 2rem;
+  color: black;
+}
+
+.product-prev {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+}
+
+.product-next {
+  position: absolute;
+  right: 40%;
+  top: 50%;
+}
+
