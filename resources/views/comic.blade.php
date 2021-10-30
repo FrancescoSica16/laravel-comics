@@ -2,20 +2,23 @@
 
 @section("title" , "fetuccine") 
 
-@section('contenuto')
-
-    <nav class="product-prev">
-        <a href="">
+@section('contenuto')  
+    @isset($previus)         
+    <nav class="product-prev product-nav">
+        <a href="{{route("comics.show" , ["id" => $previus])}}">
             <i class="fas fa-chevron-left"></i>
         </a>
-
+    @endisset
     </nav>
 
-    <nav class="product-next">
-        <a href="">           
+    @isset($next)
+    <nav class="product-next product-nav">
+        <a href="{{route("comics.show" , ["id" => $next])}}">           
             <i class="fas fa-chevron-right"></i>
         </a>
     </nav>
+    @endisset
+    
 
     <div class="container">
         <img src="{{$comic["thumb"]}}" alt="">
@@ -68,3 +71,5 @@
 @section("cdn-import")
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 @endsection
+
+

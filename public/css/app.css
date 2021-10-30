@@ -1,22 +1,49 @@
-.comic-item {
-  flex-basis: calc(16.6666666667% - 24px);
-  margin: 6px;
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
-
-.comic-item img {
-  width: 100%;
-  aspect-ratio: 1/1;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
-  margin-bottom: 10px;
+header img {
+  height: 50px;
 }
-
-.comic-item h4 {
-  text-transform: uppercase;
-  font-size: 0.7rem;
+header ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+header li {
+  line-height: 76px;
+}
+header li a {
+  display: inline-block;
+  margin: 0px 15px;
+  text-decoration: none;
+  font-family: "Roboto";
   font-weight: 500;
+  font-size: 0.8rem;
+  color: #4b4949;
+  text-transform: uppercase;
+}
+header li a.active {
+  border-bottom: 4px solid #0c7cec;
+  border-style: calc(100% - 5px);
+  color: #0c7cec;
+}
+header li a:hover {
+  color: #0b6fd4;
+  border-bottom: 4px solid #0c7cec;
+}
+
+#jumbotron {
+  height: 300px;
+  background-position: top;
+  background-image: asset("images/jumbotron.jpg");
+}
+
+#main-block {
+  background-color: black;
 }
 
 #main-wrapper {
@@ -28,39 +55,42 @@
   padding: 40px 0;
 }
 
-#main-wrapper h2 {
-  padding: 50px 0px;
+.comic-item {
+  flex-basis: calc(16.6666666667% - 24px);
+  margin: 6px;
+  min-width: 100px;
+}
+.comic-item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-bottom: 10px;
+  flex-shrink: 2;
+}
+.comic-item h4 {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 0.7rem;
+  font-weight: 500;
   color: white;
 }
-
-header {
-  color: blue;
-  background-color: chocolate;
-}
-
-header ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-}
-
-header ul li {
-  padding: 10px;
-}
-
-header ul li a {
+.comic-item a {
   text-decoration: none;
 }
 
-header.active {
-  background-color: brown;
+#main-wrapper {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 
-header:hover {
-  background-color: chartreuse;
-}
-
-nav {
+.product-nav {
   font-size: 2rem;
   color: black;
 }
@@ -77,3 +107,12 @@ nav {
   top: 50%;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 70%;
+}

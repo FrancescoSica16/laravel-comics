@@ -1,24 +1,47 @@
+
+
 header{
-    color: blue;
-    background-color: chocolate;
+ 
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
 
-    ul{
-        display: flex;
-        list-style: none;
-        justify-content: center;
+   img{
+    height: 50px;
+  }
+  
+  ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+  }
 
-       li{
-           padding: 10px;
+  li {
+    line-height: 76px;
+  
+   a{
+    display: inline-block;
+    margin: 0px 15px;
+  
+    text-decoration: none;
+    font-family: $navFont;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: $navFontColor;
+    text-transform: uppercase;
 
-           a{
-               text-decoration: none;
-           }
-       } 
-    }
     &.active{
-        background-color: brown;
-    };
+      border-bottom: 4px solid rgb(12, 124, 236);
+      border-style :calc(100% - 5px);
+      color:rgb(12, 124, 236) ;
+    }    
+  
     &:hover{
-        background-color: chartreuse;
+      color : darken(rgb(12, 124, 236), 5%);
+      border-bottom: 4px solid rgb(12, 124, 236);
     }
+  }
+}
 }

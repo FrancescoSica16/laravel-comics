@@ -1,0 +1,55 @@
+#jumbotron{
+    height: 300px;
+    background-position: top;
+    background-image: asset("images/jumbotron.jpg") ;
+  }
+
+#main-block{
+    background-color: black;   
+  }
+#main-wrapper{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px 0;
+
+}
+
+
+.comic-item{       
+    flex-basis: calc(100% / 6 - 24px ); // da chiarire il funzionamento      
+    margin: 6px;
+    min-width: 100px;
+
+    img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: top;
+        margin-bottom: 10px;
+        flex-shrink: 2;
+    }
+
+    h4{      
+        text-transform: uppercase;
+        font-family: $mainFont;
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: $itemComicTitle;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+#main-wrapper{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
