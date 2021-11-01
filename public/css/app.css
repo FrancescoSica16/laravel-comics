@@ -38,8 +38,10 @@ header li a:hover {
 
 #jumbotron {
   height: 300px;
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-position: top;
-  background-image: asset("images/jumbotron.jpg");
+  background-image: url("../images/jumbotron.jpg");
 }
 
 #main-block {
@@ -51,7 +53,6 @@ header li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
   padding: 40px 0;
 }
 
@@ -97,14 +98,74 @@ header li a:hover {
 
 .product-prev {
   position: absolute;
-  left: 40%;
+  left: 20%;
   top: 50%;
 }
 
 .product-next {
   position: absolute;
-  right: 40%;
+  right: 70%;
   top: 50%;
+}
+
+#comic-wrapper {
+  margin-top: 150px;
+  font-family: "Roboto";
+}
+#comic-wrapper h2 {
+  color: #151549;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+#comic-wrapper .shop-detail {
+  display: flex;
+  height: 40px;
+  margin: 15px 0;
+  background-color: #2fbd47;
+  align-items: stretch;
+  color: white;
+}
+#comic-wrapper .shop-detail #comic-price {
+  padding: 0px 15px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+}
+#comic-wrapper .shop-detail #avaiable-check {
+  padding: 0px 15px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  flex-grow: 1;
+  text-align: right;
+  vertical-align: middle;
+  line-height: 40px;
+}
+#comic-wrapper .shop-detail #avaiable-btn {
+  padding: 0px 15px;
+  background: none;
+  outline: none;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "roboto";
+  font-size: 15px;
+  text-decoration: none;
+}
+#comic-wrapper .shop-detail span {
+  color: rgba(255, 255, 255, 0.479);
+}
+#comic-wrapper .img-comic {
+  border: 4px solid white;
+  position: absolute;
+  top: 150px;
+}
+#comic-wrapper p {
+  color: gray;
+  margin-bottom: 20px;
+}
+#comic-wrapper #adv-section {
+  float: right;
 }
 
 * {
@@ -115,4 +176,5 @@ header li a:hover {
 
 .container {
   width: 70%;
+  margin: 0 auto;
 }

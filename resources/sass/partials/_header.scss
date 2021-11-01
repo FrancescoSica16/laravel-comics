@@ -1,5 +1,4 @@
 
-
 header{
  
     height: 80px;
@@ -44,4 +43,12 @@ header{
     }
   }
 }
+
+}
+#jumbotron{
+  height: 300px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url('../images/jumbotron.jpg') ;
 }

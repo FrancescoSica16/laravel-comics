@@ -4,9 +4,6 @@
 @section('title', "Comics") 
 
 @section('contenuto')
-<div id="jumbotron">
-
-</div>
 <div id="main-block">
     <div id="main-wrapper" class="container">
 
